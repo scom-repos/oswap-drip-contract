@@ -1,0 +1,34 @@
+{
+  "name": "@scom/drip-contract",
+  "version": "0.1.1",
+  "description": "",
+  "main": "lib/index.js",
+  "plugin": "dist/index.js",
+  "pluginTypes": "pluginTypes/index.d.ts",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && rm -rf dist && rm -rf types && npm run build:contracts && npm run build:lib && npm run build:dist",
+    "build:contracts": "rm -rf src/contracts && sol2ts solconfig.json",
+    "build:dist": "npx @ijstech/compiler",
+    "build:lib": "tsc",
+    "deploy": "ts-node tools/deploy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ijstech/eth-contract": "^0.1.4"
+  },  
+  "devDependencies": {
+    "@ijstech/cli": "^0.1.26",
+    "@ijstech/compiler": "^0.1.22",
+    "@ijstech/eth-wallet": "^0.1.35",
+    "@openzeppelin/contracts": "4.4.2",
+    "@types/mocha": "9.0.0",
+    "@types/node": "14.17",
+    "ganache-cli": "6.12.2",
+    "mocha": "^9.2.1",
+    "ts-node": "^10.1.0",
+    "typescript": "4.2.4"
+  }
+}
