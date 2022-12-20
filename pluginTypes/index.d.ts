@@ -1,5 +1,5 @@
-/// <amd-module name="@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.json.ts" />
-declare module "@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.json.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.json.ts" />
+declare module "@scom/oswap-drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.json.ts" {
     const _default: {
         abi: ({
             inputs: {
@@ -44,8 +44,8 @@ declare module "@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC7
     };
     export default _default;
 }
-/// <amd-module name="@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts" />
-declare module "@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts" />
+declare module "@scom/oswap-drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IDeployParams {
         name: string;
@@ -156,8 +156,8 @@ declare module "@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC7
         }
     }
 }
-/// <amd-module name="@scom/drip-contract/contracts/Authorization.json.ts" />
-declare module "@scom/drip-contract/contracts/Authorization.json.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/Authorization.json.ts" />
+declare module "@scom/oswap-drip-contract/contracts/Authorization.json.ts" {
     const _default_1: {
         abi: ({
             inputs: any[];
@@ -198,8 +198,8 @@ declare module "@scom/drip-contract/contracts/Authorization.json.ts" {
     };
     export default _default_1;
 }
-/// <amd-module name="@scom/drip-contract/contracts/Authorization.ts" />
-declare module "@scom/drip-contract/contracts/Authorization.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/Authorization.ts" />
+declare module "@scom/oswap-drip-contract/contracts/Authorization.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export class Authorization extends _Contract {
         static _abi: any;
@@ -259,8 +259,8 @@ declare module "@scom/drip-contract/contracts/Authorization.ts" {
         }
     }
 }
-/// <amd-module name="@scom/drip-contract/contracts/Drip.json.ts" />
-declare module "@scom/drip-contract/contracts/Drip.json.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/Drip.json.ts" />
+declare module "@scom/oswap-drip-contract/contracts/Drip.json.ts" {
     const _default_2: {
         abi: ({
             inputs: {
@@ -305,8 +305,8 @@ declare module "@scom/drip-contract/contracts/Drip.json.ts" {
     };
     export default _default_2;
 }
-/// <amd-module name="@scom/drip-contract/contracts/Drip.ts" />
-declare module "@scom/drip-contract/contracts/Drip.ts" {
+/// <amd-module name="@scom/oswap-drip-contract/contracts/Drip.ts" />
+declare module "@scom/oswap-drip-contract/contracts/Drip.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IDeployParams {
         name: string;
@@ -588,13 +588,13 @@ declare module "@scom/drip-contract/contracts/Drip.ts" {
         }
     }
 }
-/// <amd-module name="@scom/drip-contract/contracts/index.ts" />
-declare module "@scom/drip-contract/contracts/index.ts" {
-    export { ERC721 } from "@scom/drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts";
-    export { Authorization } from "@scom/drip-contract/contracts/Authorization.ts";
-    export { Drip } from "@scom/drip-contract/contracts/Drip.ts";
+/// <amd-module name="@scom/oswap-drip-contract/contracts/index.ts" />
+declare module "@scom/oswap-drip-contract/contracts/index.ts" {
+    export { ERC721 } from "@scom/oswap-drip-contract/contracts/@openzeppelin/contracts/token/ERC721/ERC721.ts";
+    export { Authorization } from "@scom/oswap-drip-contract/contracts/Authorization.ts";
+    export { Drip } from "@scom/oswap-drip-contract/contracts/Drip.ts";
 }
-/// <amd-module name="@scom/drip-contract" />
-declare module "@scom/drip-contract" {
-    export * as Contracts from "@scom/drip-contract/contracts/index.ts";
+/// <amd-module name="@scom/oswap-drip-contract" />
+declare module "@scom/oswap-drip-contract" {
+    export * as Contracts from "@scom/oswap-drip-contract/contracts/index.ts";
 }
